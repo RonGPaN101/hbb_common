@@ -136,7 +136,7 @@ lazy_static::lazy_static! {
         //启用UDP打洞
         map.insert("enable-udp-punch".to_string(), "Y".to_string());
         //启用IPv6 P2P连接
-        map.insert("enable-ipv6-punch".to_string(), "Y".to_string());
+        map.insert("enable-ipv6-punch".to_string(), "N".to_string());
         //禁用发现选项卡
         map.insert("disable-discovery-panel".to_string(), "Y".to_string());
         //默认提权运行
@@ -163,13 +163,13 @@ lazy_static::lazy_static! {
         //隐藏远程打印设置选项
         map.insert("hide-remote-printer-settings".to_string(), "N".to_string());
         //隐藏代理设置选项
-        map.insert("hide-proxy-settings".to_string(), "N".to_string());
+        map.insert("hide-proxy-settings".to_string(), "Y".to_string());
         //隐藏服务设置选项
-        map.insert("hide-server-settings".to_string(), "N".to_string());
+        map.insert("hide-server-settings".to_string(), "Y".to_string());
         //隐藏安全设置选项
         map.insert("hide-security-settings".to_string(), "N".to_string());
         //隐藏网络设置选项
-        map.insert("hide-network-settings".to_string(), "N".to_string());
+        map.insert("hide-network-settings".to_string(), "Y".to_string());
         RwLock::new(map)
     };
 }
